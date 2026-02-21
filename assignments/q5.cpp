@@ -1,9 +1,7 @@
 /*
 5. The "Optimal Resource Allocation" (Bitmask DP)
-
 Problem:
 Assign N workers to N tasks such that total cost is minimum.
-
 Complexity:
 O(2^N * N^2) using state compression (Bitmask DP)
 */

@@ -1,10 +1,8 @@
 /* 
 2. The "Streaming Max" Analytics (Deques/Monotonic Queue)
-
 Problem:
 Given a stream of server latency data and a window size K,
 calculate the maximum latency in every window.
-
 Complexity:
 Each element is processed in amortized O(1) time.
 */
@@ -16,7 +14,7 @@ Each element is processed in amortized O(1) time.
 using namespace std;
 
 vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-    deque<int> dq;   // stores indices
+    deque<int> dq;
     vector<int> ans;
 
     for(int i = 0; i < nums.size(); i++) {

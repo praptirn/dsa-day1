@@ -1,11 +1,9 @@
 /* 
 4. The "Range Performance Monitor" (Segment Trees)
-
 Problem:
 Support two operations:
 1) update(index, value)
 2) queryMax(L, R)
-
 Complexity:
 Both operations run in O(log N)
 */

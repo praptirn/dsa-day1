@@ -1,7 +1,10 @@
-/*1. The "Global Autocomplete" System (Tries)
-○ Problem: Build a Trie-based system that stores 1 million strings. Implement a
+/*
+1. The "Global Autocomplete" System (Tries)
+Problem: 
+Build a Trie-based system that stores 1 million strings. Implement a
 function that returns the top 5 most frequent suggestions for a given prefix.
-○ Complexity Requirement: The prefix search must be O(L), where L is the length of
+Complexity Requirement: 
+The prefix search must be O(L), where L is the length of
 the prefix, regardless of the dictionary size.
 */
 

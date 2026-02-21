@@ -1,9 +1,10 @@
 /* 
 3. The "Dynamic Network Vulnerability" (Tarjan's Algorithm)
-
 Problem:
 Given an undirected graph, find all Critical Links (Bridges).
 A bridge is an edge whose removal disconnects the graph.
+Complexity Requirement: 
+Solve in O(V + E) using a single DFS pass.
 */
 
 #include <iostream>
@@ -25,13 +26,11 @@ class Graph {
             if(to == p) continue;
 
             if(tin[to] != -1) {
-                // Back edge
                 low[v] = min(low[v], tin[to]);
             } else {
                 dfs(to, v);
                 low[v] = min(low[v], low[to]);
 
-                // Bridge condition
                 if(low[to] > tin[v])
                     bridges.push_back({v, to});
             }
